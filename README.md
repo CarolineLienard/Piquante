@@ -1,4 +1,4 @@
-# Piquante
+# Piquante 🌶🌵
 ## A project to learn back end and how to create a Rest API
 
 This is my solution to the 6th project of the OpenClassroom's Web Developer course. In this challenge, you will learn how to create all the back end of a  Sauce review app. I've used Express JS and Mongo DB here.
