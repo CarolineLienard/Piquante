@@ -21,13 +21,9 @@ Your users should be able to:
 
 ### Screenshot
 
-<<<<<<< HEAD
 ![](./assets/project.png)
 ![](./assets/project2.png)
 ![](./assets/project3.png)
-=======
-![](project.png)
->>>>>>> 107e0a3b2f4515542b0246847c9293f7576f9794
 
 ### Built with
 
