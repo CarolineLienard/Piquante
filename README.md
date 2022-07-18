@@ -21,7 +21,9 @@ Your users should be able to:
 
 ### Screenshot
 
-![](.project.png)
+![](./assets/project.png)
+![](./assets/project2.png)
+![](./assets/project3.png)
 
 ### Built with
 
