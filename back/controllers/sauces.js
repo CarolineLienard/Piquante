@@ -1,5 +1,4 @@
 const Sauce = require('../model/Sauce')
-const { sauceValidation } = require('../middleware/sauceValidation')
 const fs = require('fs'); // Node module for images
 
 
@@ -41,10 +40,6 @@ exports.createSauce = async (req, res, next) => {
 
     // Create an object with req.body
     const sauceObject = JSON.parse(req.body.sauce)
-
-    //Validate the data before we add a sauce
-    const {error} = sauceValidation(sauceObject)
-    if (error) return res.status(400).send(error.details[0].message)
 
     // Let Mongo DB create the Sauce ID by deleting the default one
     delete sauceObject._id;
@@ -98,10 +93,6 @@ exports.modifySauce = (req, res, next) => {
         ...req.body
       }
     )
-
-    //Validate the data before we update the sauce
-    const {error} = sauceValidation(sauceObject)
-    if (error) return res.status(400).send(error.details[0].message) 
 
     // Update the sauce with the new parameters
     Sauce.updateOne(
